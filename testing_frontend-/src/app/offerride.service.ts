@@ -21,6 +21,11 @@ export class OfferrideService {
     return this.http.post("http://localhost:9011/offerride/offer",offerride,{responseType:'text' as 'json'});
   }
 
+
+public getbyplace(start_point:any){
+  return this.http.get("http://localhost:9011/offerride/offers/"+start_point);
+}
+
   /*public getdata(){
     return this.http.get("http://localhost:9011/offerride/offer");
   }

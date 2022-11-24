@@ -4,7 +4,7 @@ export class Offerride {
     name:any=""
     phone:any=""
     v_no:any=""
-    start_point:any=""
+    start:any=""
     dest_point:any=""
     start_time:any=""
     dest_time:any=""
@@ -17,7 +17,7 @@ export class Offerride {
     name:any="",
     phone:any="",
     v_no:any="",
-    start_point:any="",
+    start:any="",
     dest_point:any="",
     start_time:any="",
     dest_time:any="",
@@ -30,7 +30,7 @@ export class Offerride {
      this.name=name;
      this.phone=phone;
      this.v_no=v_no;
-     this.start_point=start_point;
+     this.start=start;
      this.dest_point=dest_point;
      this.start_time=start_time;
      this.dest_time=dest_time;

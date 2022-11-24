@@ -15,28 +15,30 @@ export class RidersviewComponent implements OnInit {
 passenger:Passenger=new Passenger();
   rides: any;
   tripid: any;
-rides2:any
+  rides2:any;
+  rides1:any;
+  rides3:any;
   constructor(private service: OfferrideService, private service1: PassengerService,private router:Router,public test:TestService) { }
   
   manipulate(tripid: any, uid: any) {
    
     let resp1 = this.service1.setpassengertripid(tripid, uid, this.passenger);
-    resp1.subscribe((data) =>{ this.rides = data
-      this.router.navigateByUrl('/payment',{state:this.rides});
+    resp1.subscribe((data) =>{ this.rides = data;
+    this.router.navigateByUrl('/payment');
     });
     this.passenger=new Passenger();
-    let resp = this.service1.sendmail(tripid)
-    resp.subscribe((data) =>{ this.rides = data
+    let resp = this.service1.sendmail(tripid);
+    resp.subscribe((data) =>{ this.rides = data;
       
     });
 
-    //let resp2 = this.service.deleteUser(tripid);
-   //  resp2.subscribe((data) => {
-    //   this.rides = data
-     //  console.log(this.rides);
+     let resp2 = this.service.deleteUser(tripid);
+     resp2.subscribe((data) => {
+       this.rides = data
+       console.log(this.rides);
       
 
-   // });
+    });
  
    
     // console.log(tripid)
@@ -49,16 +51,26 @@ rides2:any
 
 
   }
+  getTrip(start_point:any)
+{
+  let resp = this.service.getbyplace(start_point);
+  resp.subscribe((data) => {
+    this.rides3 = data
+    
+   console.log(data)
+  }
+  );
+}
 
   ngOnInit(): void {
     
-    let resp = this.service.getUsers();
+   /* let resp = this.service.getUsers();
     resp.subscribe((data) => {
       this.rides = data
       
      
     }
-    );
+    );*/
     
   }
 
