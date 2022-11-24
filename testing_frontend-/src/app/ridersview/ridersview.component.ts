@@ -30,13 +30,13 @@ rides2:any
       
     });
 
-     let resp2 = this.service.deleteUser(tripid);
-     resp2.subscribe((data) => {
-       this.rides = data
-       console.log(this.rides);
+    //let resp2 = this.service.deleteUser(tripid);
+   //  resp2.subscribe((data) => {
+    //   this.rides = data
+     //  console.log(this.rides);
       
 
-    });
+   // });
  
    
     // console.log(tripid)

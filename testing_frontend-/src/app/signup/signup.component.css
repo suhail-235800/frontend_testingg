@@ -1,56 +1,60 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-.content
-{
+
+.content {
   max-width: 400px;
-  margin:auto;
+  margin: auto;
   background-color: #fff;
-  padding:2% 2%;
+  padding: 2% 2%;
   position: relative;
-      z-index: 1;
-      background: #FFFFFF;
-    
-      margin: 0 auto 100px;
-      padding: 45px;
-      /* text-align: center; */
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  background: #FFFFFF;
+
+  margin: 0 auto 100px;
+  padding: 45px;
+  /* text-align: center; */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.btn{
+.btn {
   background-color: #08ac4b;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
+  padding: 16px;
+  margin: 8px;
+
   cursor: pointer;
-  width: 25%;
-  opacity: 0.9;
+  width: 110px;
+  height: 40px;
+
   font-size: 14px;
 
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #328f8a;
 }
-.error{
-  color:red;
-}
-body{
-  
 
-  
-  background: linear-gradient(#a6d8ff,#fff);
-  
-    font-family: "Roboto", sans-serif;
-  
-    -webkit-font-smoothing: antialiased;
-  
-    position: relative;
-    -moz-osx-font-smoothing: grayscale;
-  
+.error {
+  color: red;
 }
-.form-control
-{
+
+body {
+
+
+
+  background: linear-gradient(#a6d8ff, #fff);
+
   font-family: "Roboto", sans-serif;
-  
+
+  -webkit-font-smoothing: antialiased;
+
+  position: relative;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.form-control {
+  font-family: "Roboto", sans-serif;
+
   outline: 0;
 
   background: #f2f2f2;

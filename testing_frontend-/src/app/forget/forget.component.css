@@ -17,19 +17,7 @@ body{
    .form{
        margin-left: 35%;
    }
-  .btn{
-    text-align:center;
-    background-color: #08ac4b;
-    color: white;
-    padding: 10px 10px;
-    margin: 8px ;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    opacity: 0.9;
-    
-    
-   }
+  
   .btn:hover{
     background-color: #328f8a;
     

@@ -1,13 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
+  
+
   <br>
 
   <input type="button" value="Home" class="bt" routerLink="/home1">
   <br>
   <br>
+  <label for="invoice" style="font-size: 20px;">Enter your uid:</label>
+  <input type="text" style="border: 1px solid black;height: 22px; margin-left: 5px;" name="invoice" id="uid" #uid>
+  <button (click)="generate(uid.value)" style="margin-left: 5px;">Generate invoice</button>
   <div class="panel panel-primary">
-    <label for="invoice">Enter your uid:</label>
-    <input type="text" name="invoice" id="uid" #uid>
-    <button (click)="generate(uid.value)">Generate invoice</button>
+   
     <div class="panel-heading">
 
       <h2>Invoice</h2>
@@ -49,3 +60,4 @@
     </div>
   </div>
 </body>
+</html>

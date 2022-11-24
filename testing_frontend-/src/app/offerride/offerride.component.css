@@ -4,7 +4,13 @@
 .container {
   padding: 16px;
 }
+body {
 
+  background: linear-gradient(#a6d8ff, #fff, #fff);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 90%;

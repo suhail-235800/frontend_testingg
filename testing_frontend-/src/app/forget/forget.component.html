@@ -9,28 +9,26 @@
 
 <body >
 
-            <h1 class="mb-5" style="text-align: center;">Enter your Employee ID</h1>
+            <h1 class="mb-5" style="text-align: center;color: azure;">Enter your Employee ID</h1>
            
 
  
 
-        <form class="mb-5 " [formGroup]="forget" (ngSubmit)="submitData(uid.value)">
+        <form class="mb-5 d-flex justify-content-center " [formGroup]="forget" (ngSubmit)="submitData(uid.value)">
           <div class="mt-2 mb-2  col-4">
-            <input  type="number" formControlName="Uid"  class="form-control"  placeholder="Uid" id="uid" #uid>
+            <input  type="number" style="border:black 2px solid;" formControlName="Uid"  class="form-control"  placeholder="Uid" id="uid" #uid>
             <div *ngIf="Uid.invalid && (Uid.touched || Uid.dirty)">
               <span class="error" *ngIf="Uid.errors?.required">Uid is Required</span>
               <span class="error"*ngIf="Uid.errors?.pattern">Enter valid Uid</span>
               
             </div>
-            <br>
-              <br>
-              <br>
+            
          </div>
 
 
 
-          <button class="btn btn-success">Submit</button>
-          <button class="btn btn-success" routerLink="/home">Return home</button>
+          <button class="btn btn-success mt-2" style="width: 90px;height:30px;margin-left: 5px;">Submit</button>
+          <button class="btn btn-success mt-2" style="width: 90px;height:30px; margin-left: 5px;" routerLink="/home">Return home</button>
 
 
         </form>

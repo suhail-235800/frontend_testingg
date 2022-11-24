@@ -9,14 +9,12 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgb(92, 193, 240);
-    padding: 30px 10px;
 
-}
+    background: linear-gradient(#a6d8ff, #fff, #fff);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 .card {
     max-width: 500px;

@@ -1,8 +1,12 @@
 
 body {
-  padding-top:50px;
- 
+
+  background: linear-gradient(#a6d8ff, #fff, #fff);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 fieldset {
   border: thin solid #ccc; 
   border-radius: 4px;
