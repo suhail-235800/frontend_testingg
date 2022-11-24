@@ -1,17 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-    <br><br>
-    <b> <h2 style="color:rgb(255, 255, 255); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">Payment</h2></b>
-    <div class="ma"><br>
-    <form class="frm">
-    <p>We are currently accepting cash only</p>
-    <button type="button" class="btn " disabled>UPI</button><br>
-     <button type="button" class="btn "routerLink="/payment1">Cash</button><br>
-    <button type="button" class="btn " disabled>Net Banking</button><br>
-    <button type="button" class="btn " disabled>Card Payment</button><br>
-    </form>
     
+
+
+<div class="container px-0">
+    <div class="card px-md-4 px-3 pb-4">
+        <div class="d-flex flex-column my-3">
+            <p class="h8">Payment method</p>
+            <p class="text-muted">Choose your payment method to pay</p>
+        </div>
+        <div class="payment mb-2">
+            <a href="#" routerLink="/payment1">
+                <div class="btn btn-primary">
+                    <div>
+                        <span class="far fa-credit-card pay"></span>
+                        <span class="ps-3" style="font-size: 15px; "> Cash</span>
+                    </div>
+                    <span class="fas fa-arrow-right"></span>
+                </div>
+            </a>
+        </div>
+        <div class="payment mb-2">
+            <a href="#"style="pointer-events: none">
+                <div class="btn btn-primary">
+                    <div>
+                        <span class="fab fa-paypal pay"></span>
+                        <span class="ps-3"style="font-size: 15px; ">BHM/UPI</span>
+                    </div>
+                    <span class="fas fa-arrow-right"></span>
+                </div>
+            </a>
+        </div>
+        <div class="payment mb-2">
+            <a href="" style="pointer-events: none">
+                <div class="btn btn-primary">
+                    <div>
+                        <span class="fab fa-bitcoin pay"></span>
+                        <span class="ps-3"style="font-size: 15px; ">Debit card</span>
+                    </div>
+                    <span class="fas fa-arrow-right"></span>
+                </div>
+            </a>
+        </div>
+        <div class="payment mb-2">
+            <a href="#"style="pointer-events: none">
+                <div class="btn btn-primary">
+                    <div>
+                        <span class="fas fa-university pay"></span>
+                        <span class="ps-3"style="font-size: 15px; ">Inernet banking</span>
+                    </div>
+                    <span class="fas fa-arrow-right"></span>
+                </div>
+            </a>
+        </div>
     </div>
-    </body>
-    
-    
+</div>
+</body>
+</html>

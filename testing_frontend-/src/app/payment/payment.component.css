@@ -1,86 +1,105 @@
-.ma
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
 
-  text-align: center;}
-
-h2{
-
-font-size: 40px;
-  color: white;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(92, 193, 240);
+    padding: 30px 10px;
 
 }
 
-p{
-
-  font-size: 20px;
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.frm
-
-{
-
-  margin-left: 25%;
-  font-family: "Roboto", sans-serif;
-  
-  outline: 0;
-
-  background: #f2f2f2;
-
-  width: 50%;
-
-  border: 0;
-
-  
-
-  padding: 15px;
-
-  box-sizing: border-box;
-
-  font-size: 14px;
-
-}
-
-
-
-.btn
-
-{
-
-background-color: #3060e6;
-
-  border: none;
-
-  color: white;
-
-  padding: 15px 32px;
-
-  text-align: center;
-
-  text-decoration: none;
-
-  display: inline-block;
-
-  font-size: 16px;
-
-  margin: 4px 2px;
-
-  cursor: pointer;
-
-
-
-}
-body{
- 
-    background: linear-gradient(#a6d8ff,#fff);
-    font-family: "Roboto", sans-serif;
-  
-    -webkit-font-smoothing: antialiased;
-  
+.card {
+    max-width: 500px;
+    background-color: #00203FFF;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
     position: relative;
-    -moz-osx-font-smoothing: grayscale;
-  
+}
+
+p {
+    margin: 0px;
+}
+
+.h8 {
+    font-size: 32px;
+    font-weight: 600;
+    word-spacing: 0px;
+}
+
+.text-muted {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #89ABE3FF;
+    border: none;
+
+}
+
+.fas.fa-arrow-right {
+    width: 40px;
+    height: 40px;
+    background-color: #060672;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+/* .credit {
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.paypal {
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+} */
+.pay {
+    font-size: 30px;
+}
+
+.credit {
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+}
+
+@media(max-width:500px) {
+    .h8 {
+        font-size: 20px;
+    }
+
+    .text-muted {
+        font-size: 12px;
+    }
 }
