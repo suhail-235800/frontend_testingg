@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <h1
+        style="color:rgb(255, 255, 255); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">
+        OFFER RIDE</h1>
+      <br>
+      <br>
+      <div class="text">
+        <div class="form">
+          <div style="margin-left: 50px;">
+            <div class=".header">
+              <div>
+
+                <input type="text" placeholder="Enter UID" name="uid" id="uid" #uid [(ngModel)]="offerride.uid">
+              </div>
+
+              <div>
+
+                <input type="text" placeholder="Enter Name" name="name" id="name" #name [(ngModel)]="offerride.name">
+              </div>
+
+              <div>
+
+                <input type="text" placeholder="Enter phone" name="phno" id="phno" #phno [(ngModel)]="offerride.phone">
+              </div>
+              <div>
+
+                <input type="text" placeholder="Enter email" name="email" id="email" #email [(ngModel)]="offerride.email">
+              </div>
+              <div>
+
+                <input type="text" placeholder="Enter Vehicle Number" name="vehicle num" id="vnum" #vnum [(ngModel)]="offerride.v_no">
+              </div>
+
+
+              <div>
+
+                <input type="text" placeholder="Enter Source" name="source" id="src" #src
+                  [(ngModel)]="offerride.start_point">
+              </div>
+
+              <div>
+
+                <input type="text" placeholder="Enter Source Time" name="source time" id="srct" #srct
+                  [(ngModel)]="offerride.start_time">
+              </div>
+              <div>
+
+
+                <input type="text" placeholder="Enter Destination" name="destination" id="dest" #dest
+                  [(ngModel)]="offerride.dest_point">
+              </div>
+
+              <div>
+
+                <input type="text" placeholder="Enter Destination Time" name="dest time" id="destt" #destt
+                  [(ngModel)]="offerride.dest_time">
+              </div>
+
+              <div>
+
+
+                <input type="text" placeholder="Enter km" name="total km" id="tkm" #tkm [(ngModel)]="offerride.kms">
+
+              </div>
+
+              <div>
+
+
+                <input type="number" placeholder="Enter Desired Price per km" name="desired price per km" id="deskm"
+                  #deskm [(ngModel)]="offerride.price">
+
+              </div>
+
+              <button type="submit" class="registerbtn" style="margin-left: 300px;"
+                (click)="onSubmit(uid.value,name.value,phno.value,vnum.value,src.value,srct.value,dest.value,destt.value,deskm.value,tkm.value)">Register</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+
+</body>
+
+</html>

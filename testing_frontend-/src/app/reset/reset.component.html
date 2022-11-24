@@ -1,0 +1,51 @@
+<body>
+
+    <div class="login-page">
+  
+      <div class="form">
+  
+        <div class="login">
+  
+          <div class="login-header">
+          <br>
+          <br>
+
+  
+            <h1 style="margin-left: 15%;">Confirm Password</h1>
+  
+          </div>
+  
+        </div>
+        <br>
+        <br>
+  
+        <form class="login-form" [formGroup]="reset" (ngSubmit)="submitData()">
+          <div class="mt-2 mb-2 col-lg-8 col-8">
+            <input type="password" formControlName="Password" id="Password"  class="form-control"  placeholder="Password"/>
+            <div *ngIf="password.invalid && (password.touched || password.dirty)">
+              <span class="error" *ngIf="password.errors?.required">Password is required</span>
+  
+            </div>
+          </div>
+          
+  
+  
+  
+  
+          <button class="btn" [disabled]="reset.invalid"  (click)="submitData()" routerLink="/component1" >Submit</button>
+          <router-outlet></router-outlet>
+  
+  
+        </form>
+  
+      </div>
+  
+  
+  
+  
+    </div>
+  
+  </body>
+  
+  
+

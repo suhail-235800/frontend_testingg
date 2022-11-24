@@ -1,0 +1,52 @@
+<body>
+  <br><br>
+  <b> <h2 style="color:rgb(255, 255, 255); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">Register Here</h2></b>
+<div class="container mt-5">
+  <form class="content" [formGroup]="signup" (ngSubmit)="submitData()">
+    
+    <div class="row">
+
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="text" formControlName="UserName" class="form-control" placeholder="UserName"id="name" #name [(ngModel)]="signup1.username">
+      
+      <div *ngIf="UserName.invalid && (UserName.touched || UserName.dirty)">
+        <span class="error" *ngIf="UserName.errors?.required">Username is Required</span>
+        <span class="error"*ngIf="UserName.errors?.pattern">Enter only character</span>
+        
+      </div>
+    
+    </div>
+
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="number" formControlName="Uid"  class="form-control" placeholder="uid"id="uid"#uid required [(ngModel)]="signup1.uid">
+ 
+    </div>
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="email" formControlName="Emailid"  class="form-control" placeholder="Emailid"id="email"#email [(ngModel)]="signup1.email">
+      <div *ngIf="Emailid.invalid && (Emailid.touched || Emailid.dirty)">
+        <span class="error" *ngIf="Emailid.errors?.required">Emailid is Required</span>
+        <span class="error"*ngIf="Emailid.errors?.email">Enter valid email address</span>
+      </div>
+    </div>
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="text" formControlName="Phonenumber" class="form-control" placeholder="Phonenumber"id="phone"#phone [(ngModel)]="signup1.phone">
+      <div *ngIf="Phonenumber.invalid && (Phonenumber.touched || Phonenumber.dirty)">
+        <span class="error" *ngIf="Phonenumber.errors?.required">Phonenumber is Required</span>
+        <span class="error"*ngIf="Phonenumber.errors?.pattern">Enter only numbers</span>
+      </div>
+    </div>
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="password" formControlName="Password"  class="form-control" placeholder="Password"id="pwd"#pwd [(ngModel)]="signup1.password">
+      <div *ngIf="Password.invalid && (Password.touched || Password.dirty)">
+        <span class="error" *ngIf="Password.errors?.required">Password is Required</span>
+      </div>
+    </div>
+    <div class="mt-2 mb-2 col-lg-14 col-14">
+      <button class="btn"  [disabled]="signup.invalid" (click)="submitData()">Submit</button>
+
+    </div>
+  </div>
+  </form>
+
+</div>
+</body>

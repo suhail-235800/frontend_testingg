@@ -1,0 +1,34 @@
+<body>
+  <br><br>
+ <b> <h2 style="color:rgb(255, 255, 255); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">Login Here</h2></b>
+<div class="container mt-5">
+  <form class="content">
+   
+    <div class="row">
+
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="text" name="userName" class="form-control" placeholder="UserName"id=uid #uid [(ngModel)]="component1.username">
+
+    </div>
+    <div class="mt-2 mb-2 col-lg-11 col-8">
+      <input type="password" name="password"  class="form-control" placeholder="Password"id=pwd #pwd [(ngModel)]="component1.password">
+
+      <div>
+        <a routerLink="/forget"href="#">Forgot Password?</a>
+        </div>
+        <br>
+        <div>
+        <p class="message">Do You Have An Account?<a href="a"routerLink="/signup">create an account</a></p>
+      </div>
+      
+    </div>
+    <div class="mt-2 mb-2 col-lg-14 col-14">
+      <button class="btn"  (click)="submitData()">Submit</button>
+    </div>
+
+
+  </div>
+  </form>
+
+</div>
+</body>
